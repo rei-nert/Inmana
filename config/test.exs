@@ -12,6 +12,8 @@ config :inmana, Inmana.Repo,
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
+config: :inmanae, Inmana.Mailer, adapter: Bamboo.LocalAdapter
+
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
 config :inmana, InmanaWeb.Endpoint,
